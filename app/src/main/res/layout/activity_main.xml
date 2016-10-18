@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<fragment
+    android:id="@+id/countries_fragment"
+    android:name="elchanchoverde.tripboard.Fragments.CountryFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".Activities.MainActivity">
-
-    <fragment
-        android:id="@+id/izquierda"
-        class="elchanchoverde.tripboard.Fragments.Izquierda"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight=".5"
-        tools:layout="@layout/izquierda" />
-
-    <fragment
-        android:id="@+id/derecha"
-        class="elchanchoverde.tripboard.Fragments.Derecha"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight=".5"
-        tools:layout="@layout/derecha" />
-
-</LinearLayout>
+    tools:context="elchanchoverde.tripboard.Fragments.CountryFragment"
+    tools:layout="@android:layout/list_content"
+    />

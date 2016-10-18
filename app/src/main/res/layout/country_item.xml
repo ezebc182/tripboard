@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hola mundo!"
+        android:padding="10dp"
+        android:textColor="@color/black"
+
+    />
+    <!--Todo: Mostrar una imagen a la derecha-->
+    <!--<ImageView-->
+        <!--android:id="@+id/imagen"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_gravity="right"-->
+        <!---->
+        <!--/>-->
+    <!-- Se agrega este elemento invisible para
+    que no se vuelva a consultar la BD.-->
+    <TextView
+        android:textSize="30dp"
+        android:id="@+id/lista_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp"
+        />
+    <View style="@style/Divider" />
+</LinearLayout>
