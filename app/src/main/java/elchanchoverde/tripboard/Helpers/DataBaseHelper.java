@@ -34,7 +34,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db_Read = null;
         if (dbExists) {
 
-        }else{
+        } else {
             db_Read = this.getReadableDatabase();
             db_Read.close();
             try {
@@ -116,6 +116,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     public Cursor FetchAllList() throws SQLException {
         Cursor mCursor = mDatabase.rawQuery("SELECT * FROM 'countries' ORDER BY 'name' DESC", null);
+        if (mCursor != null) {
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
+    public Cursor FetchItemsList(String country) throws SQLException {
+        Cursor mCursor = mDatabase.rawQuery("SELECT * FROM '" + country + "' ORDER BY 'name' DESC", null);
         if (mCursor != null) {
             mCursor.moveToFirst();
         }

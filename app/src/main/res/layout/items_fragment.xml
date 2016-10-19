@@ -4,10 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal"
+    >
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FRAGMENT!!"/>
+        android:id="@+id/addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:text="Agregar ciudad"/>
+</LinearLayout>
+<ListView
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</ListView>
 
 </LinearLayout>
